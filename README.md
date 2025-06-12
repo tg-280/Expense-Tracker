@@ -18,6 +18,7 @@ def add_expense():
         writer.writerow([date, category, amount, note])
 
     print("✅ Expense added successfully!\n")
+
 def view_expenses():
     try:
         with open(FILENAME, mode="r") as file:
@@ -63,8 +64,8 @@ def menu():
             print("Goodbye! 👋")
             break
         else:
-            print("Invalid option. Please choose 1–4.\n")
+            print("Invalid choice. Please enter a number from 1 to 4.\n")
 
-# Run the app
+# Start the app
 menu()
 
